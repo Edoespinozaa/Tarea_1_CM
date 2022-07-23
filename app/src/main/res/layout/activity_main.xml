@@ -11,7 +11,7 @@
         android:id="@+id/txtMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bienvenido a nuestra App"
+        android:text="@string/bienvenido_a_nuestra_app"
         android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -30,13 +30,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/manos"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/todo" />
 
     <Button
         android:id="@+id/btnMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Comenzar"
+        android:text="@string/comenzar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -50,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:text="Listo para una experiencia como nunca antes haz visto?"
+        android:text="@string/mejor_experiencia"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/btnMain"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,6 +66,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnMain"
         app:layout_constraintTop_toBottomOf="@+id/txt2Main"
-        app:srcCompat="@drawable/silueta" />
+        app:srcCompat="@drawable/silueta"
+        android:contentDescription="@string/todo2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
